@@ -1,0 +1,103 @@
+﻿"ID","Title","Automation Type","Created By","Created On","Estimate","Expected Result","Forecast","Goals","Mission","Preconditions","Priority","References","Section","Section Depth","Section Description","Section Hierarchy","Steps","Steps","Steps (Additional Info)","Steps (Expected Result)","Steps (References)","Steps (Shared step ID)","Steps (Step)","Suite","Suite ID","Template","Type","Updated By","Updated On"
+"C31","Create an Account"," None","Adrian Rubaj","10/29/2022 6:28 PM","","","","","","User has an email address and is on the page to register
+","Critical","","User login","0","","User login","1. User enters ""First name"", ""Last Name"", ""Email"", ""Password"" and ""Confirm Password"" inputs
+
+Expected Result:
+Fields ""First name"", ""Last Name"", ""Email"", ""Password"" and ""Confirm Password"" are fillied in.2. The user clicks the ""Create an Account"" button
+
+Expected Result:
+The account has been made and the user has been redirected to the home page","","1. 
+2.","1. Fields ""First name"", ""Last Name"", ""Email"", ""Password"" and ""Confirm Password"" are fillied in.
+2. The account has been made and the user has been redirected to the home page","1. 
+2.","1. 
+2.","1. User enters ""First name"", ""Last Name"", ""Email"", ""Password"" and ""Confirm Password"" inputs
+
+2. The user clicks the ""Create an Account"" button","Master","S2","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 7:30 PM"
+"C32","Sign in"," None","Adrian Rubaj","10/29/2022 6:29 PM","","","","","","User has an registered and is on the page to login","Critical","","User login","0","","User login","1. User enters their email address and password
+
+Expected Result:
+The fields are filled in
+2. User clicks the ""sign in"" button 
+
+Expected Result:
+User has been moved to the homepage.","","1. 
+2.","1. The fields are filled in
+
+2. User has been moved to the homepage.","1. 
+2.","1. 
+2.","1. User enters their email address and password
+
+2. User clicks the ""sign in"" button","Master","S2","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 7:32 PM"
+"C33","User is able to press ""Create an Account"" button from ""Sign In"" view"," None","Adrian Rubaj","10/29/2022 6:41 PM","","","","","","User is signed out and in Customer Login page after clicking sign in button","Medium","","User login","0","","User login","1. The user clicks ""Create an Account"" button
+Expected Result:
+The user is redirected to a page where register form is visible","","1.","1. The user is redirected to a page where register form is visible","1.","1.","1. The user clicks ""Create an Account"" button","Master","S2","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 7:33 PM"
+"C34","User sign in with invalid email (negative)"," None","Adrian Rubaj","10/29/2022 6:45 PM","","","","","","","Low","","User login","0","","User login","1. User fills out email field with non-existent email and password
+
+Expected Result:
+The login fields have been filled in
+2. The user presses the ""sign in"" button 
+
+Expected Result:
+The user is shown a message ""The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later."" and does not get logged in","","1. 
+2.","1. The login fields have been filled in
+
+2. The user is shown a message ""The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later."" and does not get logged in","1. 
+2.","1. 
+2.","1. User fills out email field with non-existent email and password
+
+2. The user presses the ""sign in"" button","Master","S2","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 7:33 PM"
+"C35","User sign with invalid password (negative)"," None","Adrian Rubaj","10/29/2022 6:47 PM","","","","","","","Low","","User login","0","","User login","1. User fills out password field with existing email and invalid password
+
+Expected Result:
+The validation in fields have been filled in
+2. The user presses the ""sign in"" button
+
+Expected Result:
+The user is shown a message ""The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later."" and does not get signed in","","1. 
+2.","1. The validation in fields have been filled in
+
+2. The user is shown a message ""The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later."" and does not get signed in","1. 
+2.","1. 
+2.","1. User fills out password field with existing email and invalid password
+
+2. The user presses the ""sign in"" button","Master","S2","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 7:35 PM"
+"C36","User is able to press ""Forgot Your Password?"" button"," None","Adrian Rubaj","10/29/2022 6:49 PM","","","","","","The user is in sign in page
+","Medium","","User login","0","","User login","1. User clicks ""Forgot Your Password?"" button
+Expected Result:
+The user is redirected to the ""Forgot your password?"" page","","1.","1. The user is redirected to the ""Forgot your password?"" page","1.","1.","1. User clicks ""Forgot Your Password?"" button","Master","S2","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 7:35 PM"
+"C37","User is not able to subscribe to the site without an email (negative)"," None","Adrian Rubaj","10/29/2022 7:11 PM","","","","","","User is signed out and is in Customer Login page","Low","","User login","0","","User login","1. User leaves email field blank
+Expected Result:
+The subscribe field is empty2. User clicks ""Subscribe"" button
+Expected Result:
+Message ""This is a required field."" pops up","","1. 
+2.","1. The subscribe field is empty
+2. Message ""This is a required field."" pops up","1. 
+2.","1. 
+2.","1. User leaves email field blank
+2. User clicks ""Subscribe"" button","Master","S2","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 7:36 PM"
+"C38","User is able to subscribe to the site"," None","Adrian Rubaj","10/29/2022 7:17 PM","","","","","","User is signed out and in Customer Login page","Medium","","User login","0","","User login","1. User enters email address in the field next to the ""Subscribe"" button 
+Expected Result:
+Field next to the ""Subscribe"" button is filled2. User clicks ""Subscribe"" button
+Expected Result:
+The page refreshes and the message ""Thank you for your subscription."" pops up above the registration fields.","","1. 
+2.","1. Field next to the ""Subscribe"" button is filled
+2. The page refreshes and the message ""Thank you for your subscription."" pops up above the registration fields.","1. 
+2.","1. 
+2.","1. User enters email address in the field next to the ""Subscribe"" button 
+2. User clicks ""Subscribe"" button","Master","S2","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 7:17 PM"
+"C39","User is not able to subscribe to the site with the same email (negative)"," None","Adrian Rubaj","10/29/2022 7:21 PM","","","","","","User is signed out and in Customer Login","Low","","User login","0","","User login","1. User enters same email address in the field next to the ""Subscribe"" button 
+Expected Result:
+The field ""Enter your email address"" is filled2. User clicks ""Subscribe"" button
+Expected Result:
+The page refreshes and the message ""This email address is already subscribed."" pops up above the registration fields.","","1. 
+2.","1. The field ""Enter your email address"" is filled
+2. The page refreshes and the message ""This email address is already subscribed."" pops up above the registration fields.","1. 
+2.","1. 
+2.","1. User enters same email address in the field next to the ""Subscribe"" button 
+2. User clicks ""Subscribe"" button","Master","S2","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 7:21 PM"
+"C40","User is able to click banner on home page"," None","Adrian Rubaj","10/29/2022 7:26 PM","","","","","","User is on home page","Medium","","Home page","0","","Home page","1. User clicks banner on home page
+Expected Result:
+The user is redirected to a page where he can buy clothes","","1.","1. The user is redirected to a page where he can buy clothes","1.","1.","1. User clicks banner on home page","Master","S2","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 7:26 PM"
+"C41","User is able to click cart icon"," None","Adrian Rubaj","10/29/2022 7:29 PM","","","","","","User is on home page","Medium","","Home page","0","","Home page","1. User clicks cart icon
+Expected Result:
+The user is shown a window with what they have in their shopping cart","","1.","1. The user is shown a window with what they have in their shopping cart","1.","1.","1. User clicks cart icon","Master","S2","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 7:29 PM"

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S2</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>User login</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C31</id>
+				<title>Create an Account</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User has an email address and is on the page to register
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>User enters &quot;First name&quot;, &quot;Last Name&quot;, &quot;Email&quot;, &quot;Password&quot; and &quot;Confirm Password&quot; inputs
+</content><expected>Fields &quot;First name&quot;, &quot;Last Name&quot;, &quot;Email&quot;, &quot;Password&quot; and &quot;Confirm Password&quot; are fillied in.</expected></step>
+<step>
+<index>2</index><content>The user clicks the &quot;Create an Account&quot; button
+</content><expected>The account has been made and the user has been redirected to the home page</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C32</id>
+				<title>Sign in</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User has an registered and is on the page to login</preconds>
+										<steps_separated><step>
+<index>1</index><content>User enters their email address and password
+</content><expected>The fields are filled in
+</expected></step>
+<step>
+<index>2</index><content>User clicks the &quot;sign in&quot; button 
+</content><expected>User has been moved to the homepage.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C33</id>
+				<title>User is able to press &quot;Create an Account&quot; button from &quot;Sign In&quot; view</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed out and in Customer Login page after clicking sign in button</preconds>
+										<steps_separated><step>
+<index>1</index><content>The user clicks &quot;Create an Account&quot; button</content><expected>The user is redirected to a page where register form is visible</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C34</id>
+				<title>User sign in with invalid email (negative)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>User fills out email field with non-existent email and password
+</content><expected>The login fields have been filled in
+</expected></step>
+<step>
+<index>2</index><content>The user presses the &quot;sign in&quot; button 
+</content><expected>The user is shown a message &quot;The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.&quot; and does not get logged in
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C35</id>
+				<title>User sign with invalid password (negative)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>User fills out password field with existing email and invalid password
+</content><expected>The validation in fields have been filled in
+</expected></step>
+<step>
+<index>2</index><content>The user presses the &quot;sign in&quot; button
+</content><expected>The user is shown a message &quot;The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.&quot; and does not get signed in
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C36</id>
+				<title>User is able to press &quot;Forgot Your Password?&quot; button</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is in sign in page
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>User clicks &quot;Forgot Your Password?&quot; button</content><expected>The user is redirected to the &quot;Forgot your password?&quot; page
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C37</id>
+				<title>User is not able to subscribe to the site without an email (negative)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed out and is in Customer Login page</preconds>
+										<steps_separated><step>
+<index>1</index><content>User leaves email field blank</content><expected>The subscribe field is empty</expected></step>
+<step>
+<index>2</index><content>User clicks &quot;Subscribe&quot; button</content><expected>Message &quot;This is a required field.&quot; pops up  </expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C38</id>
+				<title>User is able to subscribe to the site</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed out and in Customer Login page</preconds>
+										<steps_separated><step>
+<index>1</index><content>User enters email address in the field next to the &quot;Subscribe&quot; button </content><expected>Field next to the &quot;Subscribe&quot; button is filled</expected></step>
+<step>
+<index>2</index><content>User clicks &quot;Subscribe&quot; button</content><expected>The page refreshes and the message &quot;Thank you for your subscription.&quot; pops up above the registration fields.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C39</id>
+				<title>User is not able to subscribe to the site with the same email (negative)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed out and in Customer Login</preconds>
+										<steps_separated><step>
+<index>1</index><content>User enters same email address in the field next to the &quot;Subscribe&quot; button </content><expected>The field &quot;Enter your email address&quot; is filled</expected></step>
+<step>
+<index>2</index><content>User clicks &quot;Subscribe&quot; button</content><expected>The page refreshes and the message &quot;This email address is already subscribed.&quot; pops up above the registration fields.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Home page</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C40</id>
+				<title>User is able to click banner on home page</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is on home page</preconds>
+										<steps_separated><step>
+<index>1</index><content>User clicks banner on home page</content><expected>The user is redirected to a page where he can buy clothes</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C41</id>
+				<title>User is able to click cart icon</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is on home page</preconds>
+										<steps_separated><step>
+<index>1</index><content>User clicks cart icon</content><expected>The user is shown a window with what they have in their shopping cart</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
